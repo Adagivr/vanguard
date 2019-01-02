@@ -11,7 +11,8 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+           uri: https://github.com/Adagivr/vanguard
+          path: spring-boot-microservice-config
         health:
           repositories:
             movie:
@@ -35,7 +36,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 ---
 
@@ -45,7 +46,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: https://github.com/Adagivr/vanguard
+          path: spring-boot-microservice-config
         health:
           repositories:
             movie:
@@ -66,7 +68,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 ---
 
@@ -78,7 +80,8 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+         uri: https://github.com/Adagivr/vanguard
+          path: spring-boot-microservice-config
         health:
           repositories:
             movie:
@@ -102,4 +105,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery.54.149.244.237.xip.io/eureka/
+      defaultZone: http://localhost:8761/eureka/
